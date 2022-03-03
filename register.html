@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ONLINE REGISTRATION</title>
+</head>
+<body bgcolor="aqua">
+	<h1>STUDENTS ONLINE REGISTRATION FORM</h1>
+
+	all the students are required to provide their details on the form below
+	<table>
+	<form>
+		<tr><td><p>NAME </td><td><input type="text" size="40" name="txtname" placeholder="your name here!" ></td></tr><!--size-it means it can take characters upto the max number placed value-the place holder--></p>
+		<p><td>PASSWORD </td><td><input type="password" size="40" placeholder="password"></td></tr></p>
+		units taken <p><input type="checkbox" name="units" value="diff">diffrential calculus</p>
+		<p>           <input type="checkbox" name="units" value="comm" checked>commercial skills</p>
+		<p>           <input type="checkbox" name="units" value="org">computer system organisations</p>
+		Gender<p><input type="radio" name="Gender" ch>female</p>
+		      <p><input type="radio" name="Gender">male</p>
+		      <p><input type="radio" name="Gender">transgender</p>
+		<select size="4" multiple><!--size allows more than one item to be displayed,multiple-is to select more than one item-->
+			<option value="cs">computer science</option>
+			<option value="se" selected>software engineering</option><!--selected-default selection--,if size is 1,this is the one that will appear on the dropbox-->
+			<option value="it">information technology</option>
+			<option value="ct">computer technology</option>
+			<option value="ps">physics and computers</option>
+		</select>
+		<p>
+		<textarea rows="10" cols="25">
+			Your comments!
+		</textarea>
+		<br><input type="submit" name="send form">  
+		  <input type="reset" name="cancel">
+	</form>
+	</table>
+</body>
+</html>

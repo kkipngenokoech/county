@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		/*p
+		{
+			color: yellow;
+			font-size: 14pt;
+			background-color: green;
+		}*/
+		.one
+		{
+			color: yellow;
+			font-size: 14pt;
+			background-color: green;
+			border-style: double;
+			font-family: arial;
+		}
+		#two 
+		{
+			color: yellow;
+			text-align: center;
+			font-size: 20pt;
+			background-color: green;
+			font-family: arial;
+			border-style: double;
+			width: 500PX;
+			position: absolute;
+			left: 400px;
+			animation-name: rot;
+			animation-timing-function:reverse;
+			animation-iteration-count: 3;
+			animation-duration: 10s;
+		}@keyframes rot{from{transform: rotateZ(180deg);}to{transform: rotateZ(360deg);}}
+		#two:hover{
+			animation-play-state:paused;
+		}
+
+	</style>
+</head>
+<body>
+	<h1 class="one">CASCADING STYLE SHEETS</h1>
+	<p>css is used to control the style of the web document in a simple and easy way .  it improves the outlook of the web document beyond what html alone can provide .</p>
+
+	<p>it was accepted by the <b class="one">world wide web consultium</b> as means through which web document can be made elegant for the viewers</p>
+	<div id="two">
+		MULTIMEDIA UNIVERSITY OF KENYA 
+	</div>
+
+</body>
+</html>
