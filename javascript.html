@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>scripting using javascript</title>
+<script language="Javascript">
+	document.write("<h1>Welcome to javascript class</h1>") //document-it is an object ,.write()-is a method ,the text in between is a parameter
+	// variable-a storage cointainer that stores values that can change
+	// we declare variable using keyword var followed by the variable name,here datatype doesnt  matter-var variable_name<once it is initalized it ,it allocates data type to it by var
+	//var my_name=prompt("what's is your name?")//asks for user input at runtime
+	//document.write("my name is "+my_name)
+	//alert("my name is "+my_name)//this just shows an alert,whch dissappears when we click ok
+	//arithemetic operators=*,/,+,-,%,++,--:it starts with multiplication division then modulous and finally add and subtract
+	// var num_1=prompt("enter your first number ")
+	// var num_2=prompt("enter your second number ")
+	// var num_sum=parseInt(num_1)+parseInt(num_2)//it converts string to int
+	// document.write("the sum is "+num_sum)
+	//control structures -determine how programs are executed
+		//decision(if & switch) and loop control structures(do while,for loop,while loop)
+	var unit_price=prompt("enter the unit price of the commodity")
+	var commodity_quantity=prompt("enter the commodity quantity")
+	var total_cost,discount_cost,payable_cost
+	total_cost=parseFloat(unit_price)*parseFloat(commodity_quantity)
+	if (total_cost>1000) 
+	{
+		discount_cost=total_cost*.1
+	}	
+	else
+		discount_cost=0
+	payable_cost=total_cost-discount_cost
+	document.write("total cost ="+total_cost)
+	document.write("<p>discount cost="+discount_cost)
+	document.write("<p>amount payable="+payable_cost)
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
